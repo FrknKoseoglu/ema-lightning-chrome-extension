@@ -1,0 +1,9 @@
+{
+  "name": "com.emalightning.tts",
+  "description": "EMA Lightning Native Audio Synthesizer Host",
+  "path": "C:\\dev\\ema-chrome\\run_host.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://iajhgfljpfghkhnonancfpjfnkmceapj/"
+  ]
+}

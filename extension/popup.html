@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>EMA Lightning</title>
+  <style>
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #7c3aed 0%, #db2777 50%, #f97316 100%);
+      color: #ffffff;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 10px;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+    .status-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      margin-left: auto;
+      backdrop-filter: blur(4px);
+    }
+    .desc {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    .btn {
+      width: 100%;
+      background: #ffffff;
+      color: #db2777;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+    .instructions {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(0, 0, 0, 0.18);
+      padding: 10px;
+      border-radius: 10px;
+      line-height: 1.45;
+      backdrop-filter: blur(4px);
+    }
+    .instructions b {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">⚡ EMA Lightning</div>
+    <div class="status-badge">● RTX 4060</div>
+  </div>
+  <div class="desc">
+    Cebinize sığan Türkçe ses modeli. Yerel GPU hızlandırmalı.
+  </div>
+  <button class="btn" id="read-current-page">Tüm Sayfayı / Haberi Dinle</button>
+
+  <div class="instructions">
+    💡 <b>İpucu:</b> Metni veya haberi seçip <b>sağ tıklayarak "Ema ile dinle"</b> diyebilirsiniz.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
