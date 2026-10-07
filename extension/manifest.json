@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "EMA Lightning - Türkçe Seslendirici",
   "version": "1.2.0",
-  "description": "Sunucusuz, doğrudan yerel RTX 4060 GPU ile Türkçe metin ve sayfa okuyucu.",
+  "description": "Sunucusuz, doğrudan yerel GPU veya CPU ile Türkçe metin ve sayfa okuyucu.",
   "permissions": [
     "contextMenus",
     "nativeMessaging",

@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   } else if (request.action === "SHOW_LOADING") {
     stopPlayback();
     estimatedDuration = Math.max(5, Math.round((request.textLength || 100) / 14));
-    renderPlayerCard("Tamponlanıyor (RTX 4060)...");
+    renderPlayerCard("Tamponlanıyor (Yerel Model)...");
     updateTimeDisplay(0, estimatedDuration);
     sendResponse({ ok: true });
   } else if (request.action === "RECEIVE_CHUNK") {
@@ -70,7 +70,7 @@ function handleIncomingChunk(b64Wav, chunkDuration) {
   if (!isAudioPlaying) {
     playNextChunk();
     const statusEl = document.getElementById("ema-card-status");
-    if (statusEl) statusEl.innerText = "Oynatılıyor 🔊 (RTX 4060)";
+    if (statusEl) statusEl.innerText = "Oynatılıyor 🔊";
     startTimer();
   }
 }
